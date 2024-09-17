@@ -1,4 +1,6 @@
-import React,{useId} from 'react'
+/* eslint-disable react/prop-types */ 
+import {useId} from 'react'
+
 
 function InputBox({
     label,
@@ -20,6 +22,7 @@ function InputBox({
    <input
    id={id}
    type="numbers"
+   className='outline-none w-full bg-transparent py-1.5'
    placeholder='Amount'
    disabled={amountDisabled}
    value = {amount}
